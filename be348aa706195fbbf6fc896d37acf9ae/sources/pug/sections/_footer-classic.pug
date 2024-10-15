@@ -1,0 +1,45 @@
+footer.section.footer-classic.context-dark
+	.container
+		.row.row-50.justify-content-sm-between
+			.col-lg-8.order-lg-2.wow-outer.ps-xl-82
+				.wow.slideInRight
+					.row.row-35.justify-content-between
+						.col-12
+							p.sub-title-2.footer-title Subscribe & Stay Updated
+							// RD Mailform
+							form.rd-mailform.text-start.rd-form-inline(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+								.form-wrap
+									label.form-label(for="subscribe-email") E-mail
+									input#subscribe-email.form-input(type="email" name="email" data-constraints="@Email @Required")
+									
+								.form-button.group-sm.text-center.text-lg-start
+									button(type="submit").button.button-md.button-primary subscribe
+						.col-md-6
+							p.sub-title-2.footer-title Phone and address
+							ul.list-contact-info
+								li
+									span.icon.mdi.mdi-map-marker.icon-md.icon-primary
+									span.list-item-text
+										a(href='#') 51 Francis Street, Darlinghurst NSW 2010, United States
+								li
+									span.icon.mdi.mdi-phone.icon-sm.icon-primary
+									span.list-item-text
+										a(href='tel:#') 1-800-123-1234
+										
+						.col-md-6.col-xl-5
+							p.sub-title-2.footer-title Get Social
+							p Follow us to stay connected and receive instant updates.
+							ul.social-list
+								li: a(href='#').icon.icon-sm.icon-circle.icon-circle-md.icon-bg-white.fa-facebook
+								li: a(href='#').icon.icon-sm.icon-circle.icon-circle-md.icon-bg-white.fa-instagram
+								li: a(href='#').icon.icon-sm.icon-circle.icon-circle-md.icon-bg-white.fa-twitter
+								li: a(href='#').icon.icon-sm.icon-circle.icon-circle-md.icon-bg-white.fa-facebook
+			.col-lg-4.order-lg-1.wow-outer.pe-xl-85
+				.wow.slideInLeft
+					.row.row-30
+						.col-12
+							+logo
+						.col-12
+							p TechDoc was founded by an experienced team of technicians who know how to get any modern PC or gadget working the right way. With over 20 years of expertise, you can always trust us.
+							.footer-divider
+							+rights

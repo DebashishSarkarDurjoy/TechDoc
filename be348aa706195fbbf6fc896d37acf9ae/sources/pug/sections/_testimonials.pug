@@ -1,0 +1,62 @@
+section.section.section-lg.bg-default.text-center
+	.container
+		.wow-outer
+			.wow.slideInDown
+				h2 Testimonials
+		// Slick Carousel
+		.slick-slider.carousel-parent(
+		data-arrows="true"
+		data-loop="true"
+		data-autoplay="false"
+		data-dots="false"
+		data-swipe="true"
+		data-items="1"
+		data-child="#child-carousel"
+		data-for="#child-carousel"
+		)
+			.item
+				.testimonials-modern
+					.testimonials-modern-text
+						p My PC was fixed promptly and at a very reasonable price. I was without my computer only for several hours, and it was picked up and delivered at the promised time. Thank you for the great job!
+					h4.testimonials-modern-name Joanna Smith
+			.item
+				.testimonials-modern
+					.testimonials-modern-text
+						p Thank you for your responsiveness to my situation. You were quick to diagnose the problem with my Samsung Galaxy S9 and took great measures to ensure a speedy solution. I am up and running clear of any viruses.
+					h4.testimonials-modern-name James Williams
+			.item
+				.testimonials-modern
+					.testimonials-modern-text
+						p TechDoc provides excellent service at very reasonable rates. Their technicians continuously kept me informed about the repair progress of my laptop. The repairs were performed with excellent results.
+					h4.testimonials-modern-name Kate Anderson
+			.item
+				.testimonials-modern
+					.testimonials-modern-text
+						p I am completely confident in TechDoc's ability to troubleshoot my IT problems in a timely and cost-efficient fashion. Their team is very bright and completely knowledgeable about a very wide range of computer issues.
+					h4.testimonials-modern-name Peter McMillan
+		
+		.slick-slider.slider-dots#child-carousel(
+			data-for=".carousel-parent"
+			data-arrows="false"
+			data-dots="false"
+			data-swipe="true"
+			data-items="4"
+			data-xs-items="4"
+			data-sm-items="4"
+			data-md-items="4"
+			data-lg-items="4"
+			data-xl-items="4"
+			data-slide-to-scroll="1"
+		)
+			.item
+				.slick-dot-item
+					+jpg('user-1-60x60')
+			.item
+				.slick-dot-item
+					+jpg('user-2-60x60')
+			.item
+				.slick-dot-item
+					+jpg('user-3-60x60')
+			.item
+				.slick-dot-item
+					+jpg('user-4-60x60')

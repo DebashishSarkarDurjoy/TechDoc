@@ -1,0 +1,25 @@
+section.section.section-lg.bg-gray-2.text-center#contacts
+	.container
+		.row.justify-content-md-center
+			.col-md-9.col-lg-7
+				h2 Get in Touch
+				// RD Mailform
+				form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+					
+					.form-wrap
+						input#contact-name.form-input(type='text' name='name' data-constraints='@Required')
+						label.form-label(for='contact-name') Name
+					
+					.form-wrap
+						input#contact-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+						label.form-label(for='contact-email') Email
+					
+					.form-wrap
+						input#contact-subject.form-input(type='text' name='subject' data-constraints='@Required')
+						label.form-label(for='contact-subject') Subject
+					
+					.form-wrap
+						label.form-label(for='contact-message') Message
+						textarea#contact-message.form-input(name='message' data-constraints='@Required')
+					
+					button.button.button-md.button-primary(type='submit') send message
